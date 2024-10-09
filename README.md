@@ -32,24 +32,29 @@
 1. Cloner ce dépôt :
    ```bash
    git clone https://github.com/CharlesZobiri/codefolio.git
+   ```
 
 2. Installer les dépendances Nodes: 
    ```bash
    npm init
+   ```
 
    ```bash
    npm init -y
+   ```
 
    ```bash 
    npm install express ejs
+   ```
 
 3. Installer tailwind : 
    ```bash
    npm install -D tailwindcss postcss autoprefixer
-
+   ```
+   
    ```bash
    npx tailwindcss init -p
-
+   ```
 
 ## Authors
 - [@CharlesZobiri](https://github.com/CharlesZobiri)
