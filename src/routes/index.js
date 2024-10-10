@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
 
-// Page d'accueil
+// Route pour la page d'accueil
 router.get('/', (req, res) => {
-  res.render('index', { title: 'Mon Portfolio' });
+  res.render('index');
 });
 
 module.exports = router;

@@ -1,21 +1,23 @@
 {
   "name": "codefolio",
   "version": "1.0.0",
-  "description": "**CodeFolio** est un portfolio web personnel conçu pour les développeurs afin de présenter un CV, des expériences professionnelles et des projets. Il permet également de mettre en valeur les compétences techniques grâce à un design simple, épuré et responsive. Ce projet offre une vitrine efficace et professionnelle pour se connecter avec des recruteurs ou des clients potentiels via un formulaire de contact intégré.",
-  "main": "index.js",
+  "description": "CodeFolio - Portfolio web personnel pour développeurs",
+  "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/server.js",
+    "build:css": "npx tailwindcss -i ./public/css/style.css -o ./public/css/output.css --watch"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "ejs": "^3.1.10",
-    "express": "^4.21.1"
+    "express": "^4.17.1",
+    "ejs": "^3.1.6",
+    "body-parser": "^1.19.0",
+    "express-session": "^1.17.1"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.47",
-    "tailwindcss": "^3.4.13"
-  }
+    "tailwindcss": "^3.0.0",
+    "postcss": "^8.3.6",
+    "autoprefixer": "^10.2.6"
+  },
+  "author": "@CharlesZobiri",
+  "license": "ISC"
 }
