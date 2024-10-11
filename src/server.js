@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const routes = require('./routes/index'); 
+const contactMe = require('./routes/contactMe'); 
 
 const app = express();
 
@@ -13,6 +14,7 @@ app.use(express.static(path.join(__dirname, '../public'))); // Statics comme CSS
 
 // Routes
 app.use('/', routes);
+app.use('/', contactMe);
 
 // Démarrer le serveur
 const PORT = process.env.PORT || 3000;
