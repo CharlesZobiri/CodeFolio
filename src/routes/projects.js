@@ -3,7 +3,7 @@ const router = express.Router();
 
 // Route pour la page d'accueil
 router.get('/', (req, res) => {
-  res.render('contactMe');
+  res.render('projects');
 });
 
 module.exports = router;
